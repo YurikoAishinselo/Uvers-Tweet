@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-neutral font-sans antialiased">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="bg-white text-black w-64 flex-shrink-0">
+            <img src="../src/img/UVT_Logo.png" class="h-8 w-auto ml-12 my-6">
+            <nav class="mt-4">
+                <div class="container flex justify-normal items-center my-4">
+                    <div class="flex items-center pl-10">
+                        <img src="../src/img/Home_Icon.png" alt="Logo" class="h-7 " >
+                    </div>
+                    <div>
+                        <a href="#" class="bg-white text-lg font-medium hover:text-gray-700 ml-6">Home</a>
+                    </div>
+                </div>
+                            
+                <div class="container flex justify-normal items-center pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Explore_Icon.png" alt="Logo" class="h-5 ml-1" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/MyFriend_Icon.png" alt="Logo" class="h-5 ml-1" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">My Friends</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Notification_Icon.png" alt="Logo" class="h-5 ml-1"  >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg  font-medium hover:text-gray-700 ml-6">Notifications</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Setting_Icon.png" alt="Logo" class="h-7" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Setting</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4 mb-52">
+                    <div class="flex items-center">
+                        <img src="../src/img/Profile_Icon.png" alt="Logo" class="h-6 ml-1" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg text-pink font-medium hover:text-gray-700 ml-6">Profile</a>
+                    </div>
+                </div>
+              
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Help_Icon.png" alt="Logo" class="h-6 ml-1" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg font-medium hover:text-gray-700 ml-6">Help</a>
+                    </div>
+                </div>
+
+                <div class="container flex justify-normal items-center bg-white pl-10 my-4">
+                    <div class="flex items-center">
+                        <img src="../src/img/Logout1_Icon.png" alt="Logo" class="h-6 ml-1" >
+                    </div>
+                    <div>
+                        <a href="#" class=" text-lg text-pink font-medium hover:text-gray-700 ml-6">Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+
+        <!-- Content -->
+        <div class="flex flex-row w-6/12 ">
+            <!-- First column (larger) -->
+            <div class="flex flex-col flex-1 overflow-hidden">
+                <!-- Content for the first column -->
+                <header class="p-4">
+                    <div class="flex justify-start items-center text-3xl">
+                        <h1 class="font-bold mt-3 ml-5">My</h1>
+                        <h1 class="font-bold text-pink mt-3 ml-1">Profil</h1>
+                    </div>
+                </header>
+                <div class="bg-white w-84  h-60 shadow-lg rounded-lg m-5 flex relative">
+                    <img src="../src/img/Login_Image_mobile.png" class="w-full mx-6 h-32 mt-5 rounded-xljustify-center " >
+                    <img src="../src/img/Profile_Icon.png" alt="Icon" class="absolute object-cover h-36 mt-16 ml-12 ">
+                    
+                    <button class="absolute">Edit Cover</button>
+                
+                    <div class=" absolute left-56 top-36">
+                        <div class="flex flex-row mt-2">
+                            <p class="font-bold text-lg">Hendry</p>
+                            <p class="font-normal text-lg">#1</p>
+                        </div>
+                        <p class="font-normal text-base ">Mau Jadi ikan</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="bg-white w-3/5 rounded-lg m-5 border flex justify-center items-center">
+                    <img src="../src/img/Login_Image_mobile.png" class="h-40 p-4">
+                </div>
+
+                
+            </div>
+
+            <!-- Second column (smaller) -->
+            
+        </div>
+        <div class="flex flex-col w-6/12 flex-1 overflow-hidden bg-pink">
+                
+        </div>
+    </div>
+</body>
+
+</html>

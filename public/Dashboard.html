@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="font-plusJakarta md:p-12 sm:p-10 xs:py-8 xs:px-0">
+    <div class="bg-cover bg-center bg-no-repeat sm:bg-frame2 md:bg-frame1 h-128">
+      <nav class="container mx-auto flex items-center justify-between">
+        <a href="#" class="text-black">
+          <img
+            src="../src/img/UVT_Logo.png"
+            alt="Your Logo"
+            class="h-12 w-auto"
+          />
+        </a>
+
+        <!-- Navigation links -->
+        <div class="hidden md:flex space-x-4 pr-8">
+          <a href="#" class="py-2 bg-white px-3 text-black hover:text-gray-400"
+            >About Us</a
+          >
+          <a href="#" class="py-2 bg-pink px-3 text-white hover:text-gray-400"
+            >Contact Us</a
+          >
+        </div>
+
+        <!-- Navbar button for smaller screens -->
+        <div class="md:hidden">
+          <button id="navbar-toggle" class="text-white focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="black"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Navigation menu for smaller screens -->
+      <div id="navbar-menu" class="md:hidden bg-white text-black hidden">
+        <a href="#" class="block py-1 mt-2 ml-3">About Us</a>
+        <a href="#" class="block py-1 ml-3">Help</a>
+        <a href="#" class="block py-1 ml-3">Contact Us</a>
+      </div>
+
+      <script>
+        // Toggle the visibility of the navbar menu on button click
+        document
+          .getElementById("navbar-toggle")
+          .addEventListener("click", function () {
+            document.getElementById("navbar-menu").classList.toggle("hidden");
+          });
+      </script>
+
+      <!-- Website Title -->
+
+      <div class="container mx-auto">
+        <div class="hidden md:block mt-24 text-left" id="mobile-title">
+          <h1 class="text-7xl lg:text-8xl xl:text-9xl font-bold text-pink">
+            UVERS Tweet.
+          </h1>
+          <p class="text-xl lg:text-3xl ml-2 mt-4 lg:mt-6">
+            Membangun Peradaban Dunia Satu Keluarga.
+          </p>
+          <p
+            class="text-3xl lg:text-4xl ml-2 mt-4 lg:mt-6 text-green font-semibold"
+          >
+            Bergabunglah Sekarang!
+          </p>
+        </div>
+        <div class="md:hidden mt-16 text-left" id="desktop-title">
+          <h1 class="text-4xl sm:text-6xl font-bold text-pink">
+            UVERS<br />Tweet.
+          </h1>
+          <p class="sm:text-xl text-base ml-1 sm:ml-2 mt-4">
+            Membangun Peradaban<br />Dunia Satu Keluarga.
+          </p>
+          <p
+            class="sm:text-2xl text-xl ml-1 sm:ml-2 mt-4 text-green font-semibold"
+          >
+            Bergabunglah Sekarang!
+          </p>
+        </div>
+      </div>
+
+      <!-- Buttons Section -->
+      <div class="container mx-auto mt-4 sm:mt-3 flex justify-start">
+        <button
+          class="bg-pink text-white py-2 px-7 lg:px-8 sm:px-6 xs:px-4 rounded-lg mr-4 lg:ml-2 ml-2 sm:ml-2 xs:ml-1"
+        >
+          Daftar
+        </button>
+        <button
+          class="bg-white text-black border-2 border-pink py-2 px-7 lg:px-8 sm:px-6 xs:px-4 rounded-lg"
+        >
+          Login
+        </button>
+      </div>
+
+      <div class="container mx-auto">
+        <p
+          class="hidden md:block text-sm lg:text-md ml-2 mt-2 lg:mt-4 font-light text-grey"
+        >
+          Dengan mendaftar, Anda menyetujui Persyaratan Layanan dan Kebijakan
+          Privasi.
+        </p>
+        <p
+          class="md:hidden xs:text-xxs sm:text-xs mt-2 lg:mt-4 font-light text-grey absolute bottom-4 xs:bottom-3 text-center"
+        >
+          Dengan mendaftar, Anda menyetujui Persyaratan Layanan dan Kebijakan
+          Privasi.
+        </p>
+      </div>
+
+      <!-- <p class="text-black text-center font-bold text-xs md:text-sm lg:text-lg">Current Breakpoint:
+    <span class="hidden sm:inline">sm</span>
+    <span class="hidden md:inline">md</span>
+    <span class="hidden lg:inline">lg</span>
+    <span class="hidden xl:inline">xl</span>
+    <span class="hidden 2xl:inline">2xl</span>
+  </p> -->
+    </div>
+    <!-- <div
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('../src/img/Dashboard_Full_Image1.jpg')"
+    > -->
+  </body>
+</html>

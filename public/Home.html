@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Home</title>
+    <style>
+      body {
+        font-family: "sans-serif";
+        background-color: #f7fafc;
+        margin: 0;
+        padding: 0;
+      }
+
+      #desktop,
+      #mobile {
+        transition: width 0.3s ease-in-out;
+      }
+
+      #desktop {
+        overflow: hidden;
+        display: none;
+      }
+
+      #sideNavbar:hover #desktop {
+        display: block;
+      }
+
+      #sideNavbar:hover #mobile {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gray-100">
+    <div class="flex">
+      <!-- Sidebar -->
+      <div id="sideNavbar" class="flex h-screen">
+        <aside id="desktop" class="w-64 sm:w-48 bg-white text-black p-4">
+          <div class="mb-6">
+            <!-- Logo -->
+            <img src="../src/img/UVT_Logo.png" alt="Logo" class="w-16 h-auto" />
+          </div>
+          <nav>
+            <ul>
+              <li class="mb-4 flex items-center">
+                <img
+                  src="../src/img/Home_Icon.png"
+                  alt="Home Icon"
+                  class="w-7 xl:w-9 h-auto"
+                />
+                <a href="#" class="ml-4 xl:text-lg xl:ml-3">Home</a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <img
+                  src="../src/img/Explore_Icon.png"
+                  alt="Explore Icon"
+                  class="w-5 h-auto ml-1 xl:w-6 xl:ml-2"
+                />
+                <a href="#" class="ml-5 xl:text-lg xl:ml-4">Explore</a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <img
+                  src="../src/img/MyFriend_Icon.png"
+                  alt="My Friends Icon"
+                  class="h-4 w-auto ml-1 xl:h-5 xl:ml-1.5"
+                />
+                <a href="#" class="ml-5 xl:text-lg xl:ml-5">My Friends</a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <i class="fas fa-bell text-xl xl:text-2xl ml-1 xl:ml-2"></i>
+                <a href="#" class="ml-5 xl:text-lg xl:ml-5">Notifications</a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <img
+                  src="../src/img/Setting_Icon.png"
+                  alt="My Friends Icon"
+                  class="w-5 h-auto ml-1 xl:w-7 xl:ml-1"
+                />
+                <a href="#" class="ml-4 xl:ml-4 xl:text-lg">Settings</a>
+              </li>
+              <li class="flex items-center">
+                <img
+                  src="../src/img/Temp_Profile.png"
+                  alt="My Friends Icon"
+                  class="w-5 h-auto ml-1 xl:w-6 xl:ml-1.5"
+                />
+                <a href="#" class="ml-4 xl:text-lg xl:ml-5">Profile</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <aside id="mobile" class="w-16 bg-white text-black p-4 hidden sm:block">
+          <!-- Logo -->
+          <div class="mb-6">
+            <img
+              src="../src/img/UVT_Logo.png"
+              alt="Logo"
+              class="w-10 xl:w-12 h-auto"
+            />
+          </div>
+
+          <nav>
+            <ul>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/Home_Icon.png"
+                  alt="Home Icon"
+                  class="w-7 xl:w-9 h-auto"
+                />
+              </li>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/Explore_Icon.png"
+                  alt="Explore Icon"
+                  class="w-5 h-auto ml-1 xl:w-6"
+                />
+              </li>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/MyFriend_Icon.png"
+                  alt="My Friends Icon"
+                  class="h-4 w-auto ml-1 xl:h-5"
+                />
+              </li>
+              <li class="mb-5 flex items-center">
+                <i class="fas fa-bell text-xl ml-1 xl:text-2xl"></i>
+              </li>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/Setting_Icon.png"
+                  alt="My Friends Icon"
+                  class="w-5 h-auto ml-1 xl:w-6"
+                />
+              </li>
+              <li class="mb-5 flex items-center">
+                <img
+                  src="../src/img/Temp_Profile.png"
+                  alt="My Friends Icon"
+                  class="w-5 h-auto ml-1 xl:w-6"
+                />
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex flex-col flex-grow max-w-full ml-5 mr-10 relative">
+        <!-- Twitter-like profile UI -->
+        <header class="p-4">
+          <p class="text-3xl font-semibold">
+            <span class="text-black">My</span>
+            <span class="text-pink"> Profile</span><br />
+          </p>
+        </header>
+        <div
+          class="bg-white sm:w-full h-2/5 rounded-xl my-5 shadow-lg relative"
+        >
+          <!-- Box with shadow -->
+          <div class="w-full h-full overflow-hidden rounded-3xl relative">
+            <!-- Image inside the box -->
+            <img
+              src="../src/img/Login_Image_mobile.png"
+              class="w-full h-2/4 object-cover px-4 py-3"
+            />
+          </div>
+          <div
+            class="absolute rounded-lg md:left-9 lg:top-20 sm:top-18 xs:top-10 md:mt-0 mt-6 left-6 lg:left-10"
+          >
+            <img
+              src="../src/img/Temp_Profile.png"
+              alt="Profile Image"
+              class="w-auto xl:h-56 md:h-48 lg:h-52 sm:h-44 h-32"
+            />
+          </div>
+          <div
+            class="absolute bottom-0 right-0 bg-gray-100 rounded-full p-2 m-4"
+          >
+            <i class="fas fa-cog text-gray-500"></i>
+          </div>
+          <p
+            class="text-black text-center font-bold text-xs md:text-sm lg:text-lg"
+          >
+            Current Breakpoint:
+            <span class="hidden xs:inline">sm</span>
+            <span class="hidden sm:inline">sm</span>
+            <span class="hidden md:inline">md</span>
+            <span class="hidden lg:inline">lg</span>
+            <span class="hidden xl:inline">xl</span>
+            <span class="hidden 2xl:inline">2xl</span>
+          </p>
+        </div>
+        <!-- End of Twitter-like profile UI -->
+      </div>
+    </div>
+  </body>
+</html>
