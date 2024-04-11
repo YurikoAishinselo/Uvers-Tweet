@@ -18,6 +18,7 @@ module.exports = {
       'grey': '#252A34',
       'greyHomeBackground': '#D9D9D9',
       'lightGrey': '#F0F0F0',
+      'red' : '#FF0000',
     },
     fontFamily: {
       'plusJakarta': ['Plus Jakarta Sans', 'sans-serif'],

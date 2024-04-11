@@ -1,88 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
 
-  <body class="font-plusJakarta justify-center">
-    <div class="mb-3 md:mb-0 xs:text-center md:text-center bg-grey">
-      <p class="font-bold text-5xl pt-12 pb-8 md:block">
-        <span class="text-white">Welcome To</span>
-        <span class="text-pink">UVERS Tweet</span>
-      </p>
-      
+<body class="font-plusJakarta justify-center">
+  <div class="mb-3 md:mb-0 xs:text-center md:text-center bg-grey">
+    <p class="font-bold md:text-5xl text-4xl pt-12 pb-8">
+      <span class="text-white">Welcome To</span>
+      <span class="text-pink">UVERS Tweet</span>
+    </p>
+  </div>
+
+  <div class="m-auto container flex flex-wrap pt-12 xs:pt-4 justify-center items-center">
+    <!-- Image Container (Right Side) -->
+    <div class="w-full lg:w-4/12 hidden lg:block">
+      <img src="../src/img/Lock_Icon.png" class="mx-auto lg:mx-0 w-68" />
     </div>
-    <div class="m-auto container flex flex-wrap pt-12 justify-center items-center">
-      <!-- Image Container (Right Side) -->
-      <div class="w-full lg:w-4/12 hidden lg:block">
-        <img src="../src/img/Lock_Icon.png" class="mx-auto lg:mx-0 w-68"/>
-      </div>
 
-      <!-- Form Container (Left Side) -->
-      <div class="w-full lg:w-8/12 lg:px-6 px-2 bg-white">
-        <form
-          class="bg-white md:px-2 lg:px-12 py-6 md:py-8 lg:py-10 items-center justify-center">
-          <!-- Nama Field -->
-          <div class="mb-6">
-            <input
+    <!-- Form Container (Left Side) -->
+    <div class="w-full lg:w-8/12 lg:px-6 px-2 bg-white">
+      <form
+        class="bg-white md:px-2 lg:px-12 py-6 md:py-8 lg:py-10 items-center justify-center"
+        id="signInForm"
+      >
+      <div class="mb-6">
+          <input
               class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="nama"
               type="text"
               placeholder="Nama"
-            />
+          />
+          <div id="namaError" class="alert hidden text-pink">
+              <i class="fas fa-exclamation-circle mr-1"></i> Please enter your name
           </div>
-          <div class="mb-6">
-            <input
-              class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="nim"
-              type="number"
-              placeholder="NIM"
-            />
-          </div>
-          <div class="mb-6">
-            <input
-              class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="email"
-              type="email"
-              placeholder="Email"
-            />
-          </div>
-          <div class="mb-6">
-            <input
-              class="shadow-md appearance-none bg-white w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="tempat_tanggal_lahir"
-              type="date"
-              placeholder="Tempat Tanggal Lahir"
-            />
-          </div>
-          <div class="mb-6">
-            <input
-              class="shadow-md appearance-none bg-white w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="password"
-              type="password"
-              placeholder="Password"
-            />
-          </div>
-          <div class="mb-6">
-            <input
-              class="shadow-md appearance-none bg-white w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="confirm_password"
-              type="password"
-              placeholder="Confirm Password"
-            />
-          </div>
-        </form>
       </div>
+      <div class="mb-6">
+        <input
+          class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="nim"
+          type="number"
+          placeholder="NIM"
+        />
+        <div id="nimError" class="alert hidden text-pink">
+          <i class="fas fa-exclamation-circle mr-1"></i> Please enter your NIM
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <input
+          class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email"
+          type="email"
+          placeholder="Email"
+        />
+        <div id="emailError" class="alert hidden text-pink">
+          <i class="fas fa-exclamation-circle mr-1"></i> Please enter a valid email
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <input
+          class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="tempat_tanggal_lahir"
+          type="date"
+          placeholder="Tempat Tanggal Lahir"
+        />
+        <div id="tanggalError" class="alert hidden text-pink">
+          <i class="fas fa-exclamation-circle mr-1"></i> Please enter your birth date
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <input
+          class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="password"
+          type="password"
+          placeholder="Password"
+        />
+        <div id="passwordError" class="alert hidden text-pink">
+          <i class="fas fa-exclamation-circle mr-1"></i> Please enter a password
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <input
+          class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="confirm_password"
+          type="password"
+          placeholder="Confirm Password"
+        />
+        <div id="confirmPasswordError" class="alert hidden text-pink">
+          <i class="fas fa-exclamation-circle mr-1"></i> Passwords do not match
+        </div>
+      </div>
+      
+        <div class="mb-6 relative mt-10">
+            <button class="text-base md:text-xl appearance-none bg-pink text-white w-full py-2 px-3 md:px-4 md:py-3 lg:px-5 rounded-md">Sign in</button>
+        </div>
+      </form>
     </div>
-  </body>
+  </div>
+
+  <script>
+    const signInForm = document.getElementById('signInForm');
+    const namaInput = document.getElementById('nama');
+    const nimInput = document.getElementById('nim');
+    const emailInput = document.getElementById('email');
+    const tanggalInput = document.getElementById('tempat_tanggal_lahir');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm_password');
+    const eyeIcon = document.getElementById('eyeIcon');
+    const confirmEyeIcon = document.getElementById('confirmEyeIcon');
+  
+    function validateForm() {
+      let isValid = true;
+  
+      if (namaInput.value === '') {
+        document.getElementById('namaError').classList.remove('hidden');
+        isValid = false;
+      } else {
+        document.getElementById('namaError').classList.add('hidden');
+      }
+  
+      if (nimInput.value === '') {
+        document.getElementById('nimError').classList.remove('hidden');
+        isValid = false;
+      } else {
+        document.getElementById('nimError').classList.add('hidden');
+      }
+  
+      if (emailInput.value === '') {
+        document.getElementById('emailError').classList.remove('hidden');
+        isValid = false;
+      } else {
+        document.getElementById('emailError').classList.add('hidden');
+      }
+  
+      if (tanggalInput.value === '') {
+        document.getElementById('tanggalError').classList.remove('hidden');
+        isValid = false;
+      } else {
+        document.getElementById('tanggalError').classList.add('hidden');
+      }
+  
+      if (passwordInput.value === '') {
+        document.getElementById('passwordError').classList.remove('hidden');
+        isValid = false;
+      } else {
+        document.getElementById('passwordError').classList.add('hidden');
+      }
+  
+      if (confirmPasswordInput.value === '' || confirmPasswordInput.value !== passwordInput.value) {
+        document.getElementById('confirmPasswordError').classList.remove('hidden');
+        isValid = false;
+      } else {
+        document.getElementById('confirmPasswordError').classList.add('hidden');
+      }
+  
+      return isValid;
+    }
+  
+    signInForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (validateForm()) {
+        alert('Form submitted successfully!');
+      }
+    });
+  
+    // Add event listener to the toggle password button
+    togglePassword.addEventListener('click', function (event) {
+      event.preventDefault();
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        eyeIcon.classList.remove('fa-eye');
+        eyeIcon.classList.add('fa-eye-slash');
+      } else {
+        passwordInput.type = 'password';
+        eyeIcon.classList.remove('fa-eye-slash');
+        eyeIcon.classList.add('fa-eye');
+      }
+    });
+  
+    // Add event listener to the toggle confirm password button
+    toggleConfirmPassword.addEventListener('click', function (event) {
+      event.preventDefault();
+      if (confirmPasswordInput.type === 'password') {
+        confirmPasswordInput.type = 'text';
+        confirmEyeIcon.classList.remove('fa-eye');
+        confirmEyeIcon.classList.add('fa-eye-slash');
+      } else {
+        confirmPasswordInput.type = 'password';
+        confirmEyeIcon.classList.remove('fa-eye-slash');
+        confirmEyeIcon.classList.add('fa-eye');
+      }
+    });
+  </script>
+  
+  
+</body>
 </html>
