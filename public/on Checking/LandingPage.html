@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="font-plusJakarta md:p-12 sm:p-10 xs:py-8 xs:px-0">
+  <div class="bg-cover bg-center bg-no-repeat sm:bg-frame2 md:bg-frame1 h-128">
+    <nav class="container mx-auto flex items-center justify-between">
+      <a href="#" class="text-black">
+        <img src="../src/img/UVT_Logo.png" alt="Your Logo" class="h-12 w-auto">
+      </a>
+
+      <!-- Navbar button for smaller screens -->
+      <div class="md:hidden">
+        <button id="navbar-toggle" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation links -->
+      <div class="hidden md:flex space-x-4 pr-8">
+        <a href="#" class="py-2 bg-white px-3 text-black hover:text-gray-400">About Us</a>
+        <a href="#" class="py-2 bg-pink px-3 text-white hover:text-gray-400">Contact Us</a>
+      </div>
+    </nav>
+
+    <!-- Navigation menu for smaller screens -->
+    <div id="navbar-menu" class="md:hidden bg-white text-black hidden mx-auto">
+      <a href="#" class="block py-1 mt-2">About Us</a>
+      <a href="#" class="block py-1">Help</a>
+    </div>
+
+    <script>
+      // Toggle the visibility of the navbar menu on button click
+      document.getElementById("navbar-toggle").addEventListener("click", function () {
+        document.getElementById("navbar-menu").classList.toggle("hidden");
+      });
+    </script>
+  </div>
+</body>
+</html>

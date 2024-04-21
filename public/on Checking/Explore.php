@@ -13,7 +13,24 @@
 
 <body class="bg-white font-sans antialiased">
     <div class="flex h-screen ">
-
+        <!-- Sidebar -->
+        <div class="w-16 xl:w-1/4"></div>
+        <div class="bg-white text-black xl:w-64 flex-shrink-0 fixed">
+            <img src="../src/img/UVT_Logo.png" class="h-8 xl:h-10 w-auto sm:items-center mx-2 xl:ml-12 my-6 ">
+            <!-- Small Side Bar-->
+            <div class=" bg-white xl:hidden items-center flex justify-center flex-col mt-10 ">
+            <img src="../src/img/Home_Icon_Pink.png" alt="Logo" class="h-7 " >
+            <img src="../src/img/Explore_Icon.png" alt="Logo" class="h-7 mt-3" >
+            <img src="../src/img/MyFriend_Icon.png" alt="Logo" class="h-7 mt-3" >
+            <img src="../src/img/Notification_Icon.png" alt="Logo" class="h-7 mt-3" >
+            <img src="../src/img/Setting_Icon.png" alt="Logo" class="h-7 mt-3" >
+            <img src="../src/img/Profile_Icon.png" alt="Logo" class="h-6 mt-3" >
+            <div class="flex  flex-col content-end mt-56">
+                <img src="../src/img/Help_Icon.png" alt="Logo" class="h-6 mt-3" >
+                <img src="../src/img/Logout1_Icon.png" alt="Logo" class="h-6 mt-3" >
+            </div>
+            </div>
+        </div>
         <!-- Content -->
 
         <div class=" w-10/12 grid grid-cols-1">
@@ -31,7 +48,7 @@
                 <div class="flex flex-row mt-4 ml-20 mb-4">
                     <label>
                         <img src="../src/img/Image_Icon.png" alt="Image" class="h-5 w-5 mr-5" id="addImageButton">
-                        <input type="file" name="fileInput" id="fileInput" accept=".png, .jpg, .jpeg, .heic" style="display: none; visibility: none;">
+                        <input type="file" name="fileInput" id="fileInput" accept=".png, .jpg, .jpeg" style="display: none; visibility: none;">
                     </label>
                     <label>
                         <img src="../src/img/Gif_Icon.png" alt="Image" class="h-5 w-5 mr-5" id="addImageButton">

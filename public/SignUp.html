@@ -81,33 +81,44 @@
         </div>
       </div>
       
-      <div class="mb-6">
+      <div class="relative mb-6">
         <input
           class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="password"
           type="password"
           placeholder="Password"
         />
-        <div id="passwordError" class="alert hidden text-pink">
-          <i class="fas fa-exclamation-circle mr-1"></i> Please enter a password
+        <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <button id="togglePassword" class="text-gray-400 focus:outline-none">
+                <i id="eyeIcon" class="fas fa-eye"></i>
+            </button>
         </div>
-      </div>
-      
-      <div class="mb-6">
+        <div id="passwordError" class="alert hidden text-pink">
+            <i class="fas fa-exclamation-circle mr-1"></i> Please enter a password
+        </div>
+    </div>
+    
+    <div class="relative mb-6">
         <input
           class="shadow-md appearance-none bg-white rounded w-full py-2 px-3 md:py-3 md:px-4 lg:py-4 lg:px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="confirm_password"
           type="password"
           placeholder="Confirm Password"
         />
+        <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <button id="toggleConfirmPassword" class="text-gray-400 focus:outline-none">
+                <i id="confirmEyeIcon" class="fas fa-eye"></i>
+            </button>
+        </div>
         <div id="confirmPasswordError" class="alert hidden text-pink">
-          <i class="fas fa-exclamation-circle mr-1"></i> Passwords do not match
+            <i class="fas fa-exclamation-circle mr-1"></i> Passwords do not match
         </div>
+    </div>
+    
+    <div class="relative">
+      <button class="text-base md:text-xl appearance-none bg-pink text-white w-full py-2 px-3 md:px-4 md:py-3 lg:px-5 rounded-md">Sign Up</button>
+  </div>
       </div>
-      
-        <div class="mb-6 relative mt-10">
-            <button class="text-base md:text-xl appearance-none bg-pink text-white w-full py-2 px-3 md:px-4 md:py-3 lg:px-5 rounded-md">Sign in</button>
-        </div>
       </form>
     </div>
   </div>

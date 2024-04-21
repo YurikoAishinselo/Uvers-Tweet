@@ -1,0 +1,23 @@
+{
+    "users": [
+      {
+        "nama": "Lustini",
+        "jurusan": "Teknik Informatika",
+        "angkatan": 2023,
+        "roles": ["Front End Developer"]
+      },
+      {
+        "nama": "Yuriko",
+        "jurusan": "Tekni Perangkat lunak",
+        "angkatan": 2021,
+        "roles": ["Mentor"]
+      },
+      {
+        "nama": "Hendry",
+        "jurusan": "Teknik Informatika",
+        "angkatan": 2023,
+        "roles": ["Front End Developer", "UI/UX Designer", "Back End Developer"]
+      }
+    ]
+  }
+  
